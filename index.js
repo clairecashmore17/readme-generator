@@ -38,7 +38,7 @@ readMeMock = {
     test: 'to test, simply fork, and test on your own',
     gitName: 'clairecashmore17',
     email: 'cbear5@live.com',
-    license: 'MIT'
+    license: 'IBM'
 
 };
 //function to prompt user for information
@@ -52,6 +52,7 @@ const promptUser = readmeData => {
     // **********************************
         return inquirer.prompt([
         {
+            //project title
             type: 'input',
             name: questionInputName[0],
             message: questionsInput[0],
@@ -66,6 +67,7 @@ const promptUser = readmeData => {
             }
         },
         {
+            //description
             type: 'input',
             name: questionInputName[1],
             message: questionsInput[1],
@@ -80,6 +82,7 @@ const promptUser = readmeData => {
             }
         },  
         {
+            // install instructions
             type: 'input',
             name: questionInputName[2],
             message: questionsInput[2],
@@ -94,6 +97,7 @@ const promptUser = readmeData => {
             }
         },
         {
+            //usage
             type: 'input',
             name: questionInputName[3],
             message: questionsInput[3],
@@ -108,6 +112,7 @@ const promptUser = readmeData => {
             }
         },
         {
+            //contribution
             type: 'input',
             name: questionInputName[4],
             message: questionsInput[4],
@@ -122,6 +127,7 @@ const promptUser = readmeData => {
             }
         },
         {
+            //test instructions
             type: 'input',
             name: questionInputName[5],
             message: questionsInput[5],
@@ -136,6 +142,7 @@ const promptUser = readmeData => {
             }
         },
         {
+            //git username
             type: 'input',
             name: questionInputName[6],
             message: questionsInput[6],
@@ -150,6 +157,7 @@ const promptUser = readmeData => {
             }
         },
         {
+            //email address
             type: 'input',
             name: questionInputName[7],
             message: questionsInput[7],
@@ -164,10 +172,17 @@ const promptUser = readmeData => {
             }
         },
         {
+            type: 'confirm',
+            name: 'confirmLicense',
+            message: 'Would you like to add a license?',
+            default: true
+        },
+        {
+            //license
             type: 'checkbox',
             name: 'license',
             message: "What license did you use?",
-            choices: ["MIT", "Apache", "Boost", "BSD", "CC0","EPL","GNU", "IBM", "ISC", "MPL", "ODC", "ODbL","Perl","OFL", "Unlicense", "WTFPL"]
+            choices: ["MIT", "Apache", "Boost", "BSD 3", "CC0","EPL","GNU v3", "IBM", "ISC", "MPL", "ODC", "ODbL","Perl","OFL", "Unlicense", "WTFPL"]
         }
         ])
         .then(userData => {
@@ -194,11 +209,3 @@ const promptUser = readmeData => {
 
 
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
