@@ -38,7 +38,7 @@ readMeMock = {
     test: 'to test, simply fork, and test on your own',
     gitName: 'clairecashmore17',
     email: 'cbear5@live.com',
-    license: 'IBM'
+    license: 'MIT'
 
 };
 //function to prompt user for information
@@ -56,8 +56,8 @@ const promptUser = readmeData => {
             type: 'input',
             name: questionInputName[0],
             message: questionsInput[0],
-            validate: userInput => {
-                if(userInput){
+            validate: title => {
+                if(title){
                     return true;
                 }
                 else {
@@ -71,8 +71,8 @@ const promptUser = readmeData => {
             type: 'input',
             name: questionInputName[1],
             message: questionsInput[1],
-            validate: userInput => {
-                if(userInput){
+            validate: description => {
+                if(description){
                     return true;
                 }
                 else {
@@ -86,8 +86,8 @@ const promptUser = readmeData => {
             type: 'input',
             name: questionInputName[2],
             message: questionsInput[2],
-            validate: userInput => {
-                if(userInput){
+            validate: installInstructions => {
+                if(installInstructions){
                     return true;
                 }
                 else {
@@ -101,8 +101,8 @@ const promptUser = readmeData => {
             type: 'input',
             name: questionInputName[3],
             message: questionsInput[3],
-            validate: userInput => {
-                if(userInput){
+            validate: usage => {
+                if(usage){
                     return true;
                 }
                 else {
@@ -116,8 +116,8 @@ const promptUser = readmeData => {
             type: 'input',
             name: questionInputName[4],
             message: questionsInput[4],
-            validate: userInput => {
-                if(userInput){
+            validate: contribution => {
+                if(contribution){
                     return true;
                 }
                 else {
@@ -131,8 +131,8 @@ const promptUser = readmeData => {
             type: 'input',
             name: questionInputName[5],
             message: questionsInput[5],
-            validate: userInput => {
-                if(userInput){
+            validate: testInstructions => {
+                if(testInstructions){
                     return true;
                 }
                 else {
@@ -146,8 +146,8 @@ const promptUser = readmeData => {
             type: 'input',
             name: questionInputName[6],
             message: questionsInput[6],
-            validate: userInput => {
-                if(userInput){
+            validate: gitUsername => {
+                if(gitUsername){
                     return true;
                 }
                 else {
@@ -161,8 +161,8 @@ const promptUser = readmeData => {
             type: 'input',
             name: questionInputName[7],
             message: questionsInput[7],
-            validate: userInput => {
-                if(userInput){
+            validate: email => {
+                if(email){
                     return true;
                 }
                 else {
@@ -194,18 +194,12 @@ const promptUser = readmeData => {
     
 };
 
-// promptUser()
-// .then(readmeData => {
-    console.log(readMeMock);
-    const readMeData = generateMarkdown(readMeMock);
+promptUser()
+.then(readmeData => {
+    // console.log(readMeMock);
+    const readMeData = generateMarkdown(readmeData);
     fs.writeFile('./dist/README.md', readMeData, err => {
         if(err) throw new Error(err);
         console.log('completed readme, look at generated file');
     })
-// })
-
-
-
-
-
-
+})

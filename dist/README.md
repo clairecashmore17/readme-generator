@@ -31,12 +31,9 @@ usage is for people in need of specific task management apps
 
 
 ## License
+<button><a href="https://opensource.org/licenses/MIT
+">[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</a></button>
 
-[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
-            
-<p> Your license link for IBM is 
-                [![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
-             </p>
     
 
 
