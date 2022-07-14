@@ -130,10 +130,16 @@ ${renderLicenseBadge(license)}
 }
 function generateTableOfContents(title,license){
         console.log("Your title is " + title);
-//     const lowerTitle = title.toLowerCase();
+        let lowerTitle = title.toLowerCase();
+        let splitTitle = lowerTitle.split(" ");
+        console.log(splitTitle);
+        let finalTitle = splitTitle.join('-');  
+        console.log(finalTitle);
+
     if(!license){
         return `
-- [${title}](#${title})
+        ${finalTitle}
+- [${title}](#${finalTitle})
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
@@ -145,7 +151,7 @@ function generateTableOfContents(title,license){
     }
     else {
         return `
-- [${title}](#${title.toLowerCase()})
+- [${title}](#${finalTitle})
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)

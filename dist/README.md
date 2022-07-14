@@ -1,15 +1,15 @@
 
-## title
-<h2> made by git </h2>
-<p>contact at email </p> 
+## README gen
+<h2> made by s </h2>
+<p>contact at f </p> 
  
 ## Description
-description
+d
 
 
 ## Table of Contents 
 
-- [title](#title)
+- [README gen](#readme-gen)
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
@@ -22,11 +22,11 @@ description
         
 
 ## Installation
-insatll
+d
 
 
 ## Usage
-usage
+f
 
 
 
@@ -42,10 +42,10 @@ Not sure if I want to add yet
 
 
 ## How to Contribute
-contribute
+a
 
 
 ## Tests
-test
+f
  
     
