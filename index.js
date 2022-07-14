@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 //import generateMarkdown package
 const generateMarkdown = require("./utils/generateMarkdown.js");
 //import our write file with promises
-const writeFile = require('./utils/writeFile');
+const writeFile = require('./utils/writeFile.js');
 const fs = require('fs');
 
 // // TODO: Create an array of questions for user input
@@ -171,18 +171,14 @@ const promptUser = readmeData => {
                 }
             }
         },
-        {
-            type: 'confirm',
-            name: 'confirmLicense',
-            message: 'Would you like to add a license?',
-            default: true
-        },
+       
         {
             //license
             type: 'checkbox',
             name: 'license',
             message: "What license did you use?",
-            choices: ["MIT", "Apache", "Boost", "BSD 3", "CC0","EPL","GNU v3", "IBM", "ISC", "MPL", "ODC", "ODbL","Perl","OFL", "Unlicense", "WTFPL"]
+            choices: ["MIT", "Apache", "Boost", "BSD 3", "CC0","EPL","GNU v3", "IBM", "ISC", "MPL", "ODC", "ODbL","Perl","OFL", "Unlicense", "WTFPL"],
+            
         }
         ])
         .then(userData => {
@@ -196,10 +192,12 @@ const promptUser = readmeData => {
 
 promptUser()
 .then(readmeData => {
-    // console.log(readMeMock);
-    const readMeData = generateMarkdown(readmeData);
-    fs.writeFile('./dist/README.md', readMeData, err => {
-        if(err) throw new Error(err);
-        console.log('completed readme, look at generated file');
+    console.log(readmeData);
+    const readMeMarkDown = generateMarkdown(readmeData);
+
+    writeFile(readMeMarkDown)
+    .then(writeFileResponse => {
+        console.log(writeFileResponse.message);
+    });
     })
-})
+

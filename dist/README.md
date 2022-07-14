@@ -1,15 +1,15 @@
 
-## Taskinator
-<h2> made by clairecashmore17 </h2>
-<p>contact at cbear5@live.com </p> 
+## title
+<h2> made by git </h2>
+<p>contact at email </p> 
  
 ## Description
-Manage your schedule through a dynamically updating, online task manager. Add, remove, or complete any of your daily tasks!
+description
 
 
 ## Table of Contents 
 
-- [Taskinator](#taskinator)
+- [title](#title)
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
@@ -22,11 +22,11 @@ Manage your schedule through a dynamically updating, online task manager. Add, r
         
 
 ## Installation
-To install this, simply copy the repository and keep on hand in your local files. Use with local storage! Or, navigate to the deployment page to have everything online and ready.
+insatll
 
 
 ## Usage
-usage is for people in need of specific task management apps
+usage
 
 
 
@@ -42,10 +42,10 @@ Not sure if I want to add yet
 
 
 ## How to Contribute
-To make a contribution, simply fork the project, add your updates, and make a pull request for our admins to view
+contribute
 
 
 ## Tests
-to test, simply fork, and test on your own
+test
  
     

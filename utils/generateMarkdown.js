@@ -129,10 +129,11 @@ ${renderLicenseBadge(license)}
     `
 }
 function generateTableOfContents(title,license){
-    
+        console.log("Your title is " + title);
+//     const lowerTitle = title.toLowerCase();
     if(!license){
         return `
-- [${title}](#${title.toLowerCase()})
+- [${title}](#${title})
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
@@ -162,7 +163,8 @@ function generateTableOfContents(title,license){
 module.exports = templateData => {
 
     //destructure templateData for more readable code
-    const {title, description,install,usage,contribution,test,gitName,email,license} = templateData;
+    const {title, description, install ,usage, contribution, test,gitName, email, license} = templateData[0];
+    console.log(license[0]);
 
     return `
 ## ${title}
@@ -174,7 +176,7 @@ ${description}
 
 
 ## Table of Contents 
-${generateTableOfContents(title, license)}
+${generateTableOfContents(title, license[0])}
 
 ## Installation
 ${install}
@@ -184,7 +186,7 @@ ${install}
 ${usage}
 
 
-${renderLicenseSection(license)}
+${renderLicenseSection(license[0])}
 
 
 ## Features
