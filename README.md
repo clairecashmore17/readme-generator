@@ -9,7 +9,7 @@ Through the use of Node.js, use the NPM package 'Inquirer' to take in a user inp
 
 ## Table of Contents 
 
-- [README Generator](#README Generator)
+- [README Generator](#readme-generator)
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
