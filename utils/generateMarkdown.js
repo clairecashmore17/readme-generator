@@ -132,9 +132,9 @@ function generateTableOfContents(title,license){
         console.log("Your title is " + title);
         let lowerTitle = title.toLowerCase();
         let splitTitle = lowerTitle.split(" ");
-        console.log(splitTitle);
+      
         let finalTitle = splitTitle.join('-');  
-        console.log(finalTitle);
+        
 
     if(!license){
         return `
