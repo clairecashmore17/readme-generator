@@ -1,15 +1,15 @@
 
-## README gen
-<h2> made by s </h2>
-<p>contact at f </p> 
+## Taskinator
+<h2> made by clairecashmore17 </h2>
+<p>contact at randomemail@gmail.com </p> 
  
 ## Description
-d
+Manage tasks online through this task managing app! Never lose track of time and what you have to do!
 
 
 ## Table of Contents 
 
-- [README gen](#readme-gen)
+- [Taskinator](#taskinator)
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
@@ -22,11 +22,11 @@ d
         
 
 ## Installation
-d
+N/A
 
 
 ## Usage
-f
+Use to organize your daily tasks
 
 
 
@@ -37,15 +37,12 @@ f
     
 
 
-## Features
-Not sure if I want to add yet
-
 
 ## How to Contribute
-a
+fork the repo and submit a pull request when you are finished with your changes!
 
 
 ## Tests
-f
+npm run test
  
     

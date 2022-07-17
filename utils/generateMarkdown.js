@@ -195,9 +195,6 @@ ${usage}
 ${renderLicenseSection(license[0])}
 
 
-## Features
-Not sure if I want to add yet
-
 
 ## How to Contribute
 ${contribution}
