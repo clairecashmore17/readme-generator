@@ -174,7 +174,9 @@ module.exports = templateData => {
 
     return `
 ## ${title}
-<h2> made by ${gitName} </h2>
+
+## Questions
+<h2> made by <a href = "github.com/${gitName}">${gitName}</a></h2>
 <p>contact at ${email} </p> 
  
 ## Description

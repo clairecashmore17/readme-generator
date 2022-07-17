@@ -1,15 +1,17 @@
 
-## Taskinator
-<h2> made by clairecashmore17 </h2>
+## a
+
+## Questions
+<h2> made by <a href = "github.com/clairecashmore17">clairecashmore17</a></h2>
 <p>contact at randomemail@gmail.com </p> 
  
 ## Description
-Manage tasks online through this task managing app! Never lose track of time and what you have to do!
+a
 
 
 ## Table of Contents 
 
-- [Taskinator](#taskinator)
+- [a](#a)
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
@@ -22,11 +24,11 @@ Manage tasks online through this task managing app! Never lose track of time and
         
 
 ## Installation
-N/A
+a
 
 
 ## Usage
-Use to organize your daily tasks
+a
 
 
 
@@ -39,10 +41,10 @@ Use to organize your daily tasks
 
 
 ## How to Contribute
-fork the repo and submit a pull request when you are finished with your changes!
+a
 
 
 ## Tests
-npm run test
+a
  
     
