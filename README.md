@@ -5,7 +5,7 @@
  
 ## Description
 Through the use of Node.js, use the NPM package 'Inquirer' to take in a user input and create a professional readme file with that data.
-Watch a walk through here!: https://drive.google.com/file/d/1FqD6HTMjYcKS3QpGsfzewlJeKwzuuKAq/view?usp=sharing
+Watch a walk through here!: https://drive.google.com/file/d/1LyWk2bqE0AFzOJlwj6oXrrUYsb70oZzS/view?usp=sharing
 
 
 ## Table of Contents 
