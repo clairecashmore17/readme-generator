@@ -1,50 +1,44 @@
 
-## taskinator
+## Note Taker
 
 ## Questions
 <h2> made by <a href = "github.com/clairecashmore17">clairecashmore17</a></h2>
-<p>contact at randomemail@gmail.com </p> 
+<p>contact at clairecashmore2017@gmail.com </p> 
  
 ## Description
-Manage tasks online through color coded task managin app!
+Keep track of your daily tasks through this note taker app! Save and store your tasks, revisit previous notes, or delete unwanted/completed notes all on one page!
 
 
 ## Table of Contents 
 
-- [taskinator](#taskinator)
+        note-taker
+- [Note Taker](#note-taker)
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
-- [Badges](#badges)
 - [Features](#features)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
         
 
 ## Installation
-N/A
+npm i
 
 
 ## Usage
-Use to organize your daily tasks and keep up with your schedule.
+Use for keeping track of daily notes and tasks
 
 
 
-## License
-<button><a href="https://opensource.org/licenses/Artistic-2.0
-">[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)</a></button>
-
-    
 
 
 
 ## How to Contribute
-fork the repo and submit a pull request with your additions.
+fork repo, create a pull request with desired update
 
 
 ## Tests
-npm run test
+no tests, npm run start to begin server
  
     

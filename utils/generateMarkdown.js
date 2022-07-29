@@ -144,7 +144,6 @@ function generateTableOfContents(title,license){
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
         `
@@ -158,7 +157,6 @@ function generateTableOfContents(title,license){
 - [Usage](#usage)
 - [License](#license)
 - [Badges](#badges)
-- [Features](#features)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
         `
@@ -175,12 +173,15 @@ module.exports = templateData => {
     return `
 ## ${title}
 
-## Questions
+## Contact
 <h2> made by <a href = "github.com/${gitName}">${gitName}</a></h2>
 <p>contact at ${email} </p> 
  
 ## Description
 ${description}
+
+What it looks like!
+<img = src "" >
 
 
 ## Table of Contents 
